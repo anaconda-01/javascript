@@ -1,3 +1,7 @@
 hellow 
 my name is rohit
+<<<<<<< HEAD
 this is the thing added to the maseter
+=======
+this is adding to hotfix how are you
+>>>>>>> hotfix
