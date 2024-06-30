@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        async function validate(){
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const response=await fetch('http://localhost:3000/validate');
+            const data=await response.json();
+            for (i of data){
+                if(i.email==em)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="outterbox">
+        <div class="insidebox">
+            <form action="public/validate.html" method="post">
+                //login form
+                <label for="email"> enter your emailID</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password"> enter your password</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit" onclick="validate()">submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
